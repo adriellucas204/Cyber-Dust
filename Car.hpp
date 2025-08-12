@@ -17,5 +17,10 @@ public:
   bool isAlive() const { return life > 0; };
   int getLife() const { return life; };
   void setLife(int l) { this->life = l; };
-  void gotHit() { life--; };
+  void gotHit() {
+    if (--life <= 0) {
+      this->desativarObj();
+    }
+  };
+  // bool canCollideBullet() const { return true; }
 };
