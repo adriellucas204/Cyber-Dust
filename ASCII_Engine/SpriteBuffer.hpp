@@ -24,6 +24,9 @@ public:
 	
 	virtual int getLargura(unsigned l) const {return this->limits[l].largLinha;}
 	
+	int getWidth() const {return this->largura;};
+	int getHeight() const {return this->altura;};
+
 	//RenderBase
 	virtual void init() {};
 	virtual void update() {};

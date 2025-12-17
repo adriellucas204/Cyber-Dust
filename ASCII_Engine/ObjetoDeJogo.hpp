@@ -48,6 +48,8 @@ public:
 	
 	virtual void draw(SpriteBase &screen, int x, int y) {if (pSprite && active) pSprite->draw(screen,x,y);}
 
+	//virtual bool canCollidebullet() const {return false;}
+
 protected:
 	ObjetoDeJogo(std::string name, int posL, int posC) : 
 		name(name),
